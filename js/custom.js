@@ -180,7 +180,7 @@ $(document).ready(function () {
             },
             submitHandler: function (form) {
                 $(form).ajaxSubmit({
-                    type: "POST",
+                    type: "PUT",
                     data: $(form).serialize(),
                     url: "../process.php",
                     success: function () {
