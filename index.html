@@ -431,6 +431,7 @@
                 <div class="h-50"></div>
             </div>
             <div class="col-md-9" data-aos="fade-up" data-aos-delay=".2">
+                <fieldset disabled="disabled">
                 <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
                     <div class="col-md-4">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" />
@@ -438,13 +439,13 @@
                         <input type="tel" name="phone" class="form-control" placeholder="Your Number (optional)" />
                     </div>
                     <div class="col-md-8">
-                        <textarea name="message" class="form-control" placeholder="Your Message"
+                        <textarea type="text" name="message" class="form-control" placeholder="Contact Form currently closed :)"
                             style="height:170px"></textarea>
                     </div>
                     <div class="clearfix"></div>
                     <div class="h-7"></div>
                     <div class="col-lg-12 text-center">
-                        <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
+                        <button id="submit" type="submit" name="submit" class="btn btn-glance disabled">Send</button>
                         <div id="success">
                             <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon
                                 as I can. </p>
@@ -454,6 +455,7 @@
                         </div>
                     </div>
                 </form>
+            </fieldset>
             </div>
         </div>
     </div>
