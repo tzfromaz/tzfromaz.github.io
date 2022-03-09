@@ -1,8 +1,8 @@
 <?php
 
     $to = "tracyzhang98@gmail.com";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
+    $from = $_POST['email'];
+    $name = $_POST['name'];
     $headers = "From: $from";
     $subject = "Message from Personal Website";
 
@@ -16,7 +16,7 @@
 
     $body = "Here is what was sent:\r\n"; 
 
-    foreach($fields as $a => $b){$body .= $b." : ".$_REQUEST[$a]."\r\n"; }
+    foreach($fields as $a => $b){$body .= $b." : ".$_POST[$a]."\r\n"; }
 
 
     $send = mail($to, $subject, $body, $headers);
