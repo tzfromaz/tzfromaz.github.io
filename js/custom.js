@@ -182,7 +182,7 @@ $(document).ready(function () {
                 $(form).ajaxSubmit({
                     type: "POST",
                     data: $(form).serialize(),
-                    url: "process.php",
+                    url: "../process.php",
                     success: function () {
                         $('#contact :input').attr('disabled', 'disabled');
                         $('#contact').fadeTo("slow", 1, function () {
